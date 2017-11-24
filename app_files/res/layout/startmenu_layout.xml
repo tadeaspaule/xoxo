@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+                android:id="@+id/startmenu_background"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/toggle_dark_imageview"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="20sp"
+        android:onClick="toggleDark"
+        />
+
+    <TextView
+        android:id="@+id/toggle_dark_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="50sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="70sp"
+        android:layout_marginTop="20sp"
+        android:paddingRight="10sp"
+        android:paddingLeft="5sp"
+        android:gravity="center"
+        android:text="Theme:"
+        android:textSize="22sp"
+        android:fontFamily="casual"
+        android:textColor="#000000"
+        android:onClick="toggleDark"/>
+
+    <LinearLayout
+        android:id="@+id/startmenu_buttons"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:weightSum="3"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/challenge_xoxo_tv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_rect_bg"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:text="PLAY"
+            android:textColor="@color/textColorLIGHTTHEME"
+            android:textSize="30sp"
+            android:onClick="challengeXOXO"/>
+
+        <TextView
+            android:id="@+id/move_advisor_tv"
+            android:background="@drawable/rounded_rect_bg"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Move advisor"
+            android:textColor="@color/textColorLIGHTTHEME"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:fontFamily="casual"
+            android:onClick="moveAdvisor"/>
+
+        <TextView
+            android:id="@+id/what_is_xoxo_tv"
+            android:background="@drawable/rounded_rect_bg"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="About"
+            android:textColor="@color/textColorLIGHTTHEME"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:fontFamily="casual"
+            android:onClick="whatIsXOXO"/>
+
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/contact_info_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="tpaule.apps@gmail.com"
+        android:textColor="#808080"
+        android:textSize="23sp"/>
+
+    <TextView
+        android:id="@+id/contact_info_tv"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/contact_info_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="All feedback, inquiries and thoughts are welcome at"
+        android:textColor="#808080"
+        android:fontFamily="casual"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:id="@+id/welcomescreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:onClick="dismissWelcome">
+
+        <TextView
+            android:id="@+id/welcome_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:padding="30dp"
+            android:text="Play locally with a friend, or make use of XOXO, a simple machine learning algorithm I developed that learned to be unbeatable at this game. Try to beat it, get move advice from it, read about how it works or take a look directly at its source code.\n\n- Tadeas"
+            android:textColor="#555555"
+            android:textSize="17sp"/>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/welcome_tv"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="Welcome to my Tic Tac Toe app!"
+            android:textColor="#555555"
+            android:textSize="20sp"
+            android:fontFamily="casual"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/welcome_tv"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            android:text="(click anywhere to dismiss)"
+            android:textColor="#999999"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
